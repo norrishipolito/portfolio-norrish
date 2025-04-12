@@ -41,6 +41,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  /* Custom Theme */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
 }
 
 :root {
@@ -76,8 +80,13 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
-}
 
+  /* Custom Theme */
+  --text-primary: oklch(27.9% 0.041 260.031);
+  --text-secondary: oklch(37.2% 0.044 257.287);
+  --text-muted: oklch(44.6% 0.043 257.281);
+  --background-gradient: linear-gradient(to bottom, #fafafa, #d4d4d8);
+}
 .dark {
   --background: oklch(0.141 0.005 285.823);
   --foreground: oklch(0.985 0 0);

@@ -21,15 +21,15 @@ const NavigationBar = ({ className }: { className?: string }) => {
     >
       <Avatar>
         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-        <AvatarFallback>CN</AvatarFallback>
+        <AvatarFallback>NH</AvatarFallback>
       </Avatar>
       <NavigationMenu>
-        <NavigationMenuList className="gap-6">
+        <NavigationMenuList className="gap-3">
           {navigationItems.map(({ href, label }) => (
             <NavigationMenuItem key={href} asChild>
               <NavigationMenuLink
                 href={href}
-                className="text-sm font-medium text-gray-700 hover:text-accent-foreground hover:bg-sidebar-ring/25 transition"
+                className="text-sm font-medium text-text-primary hover:text-accent-foreground hover:bg-sidebar-ring/25 transition"
               >
                 {label}
               </NavigationMenuLink>
